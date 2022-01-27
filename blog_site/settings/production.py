@@ -8,7 +8,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 ALLOWED_HOSTS = ['.herokuapp.com']
 
-DEBUG = os.environ.get('DEBUG', default=False, cast=bool)
+DEBUG = (os.environ.get('DEBUG_VALUE') == 'True')
 
 
 '''
